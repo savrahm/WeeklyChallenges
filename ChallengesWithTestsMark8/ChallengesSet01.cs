@@ -39,7 +39,7 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            return $"Hello, {nameOfPerson}!";
+            return nameOfPerson == "" ? "Hello!" : $"Hello, {nameOfPerson}!";
         }
 
         public string GetHey()
